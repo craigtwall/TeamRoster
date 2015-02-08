@@ -161,12 +161,23 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PlayerController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="DAL\RosterContext.cs" />
+    <Compile Include="DAL\SchoolContext.cs" />
+    <Compile Include="DAL\SchoolInitializer.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Team.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -226,6 +237,21 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Student\Create.cshtml" />
+    <Content Include="Views\Student\Delete.cshtml" />
+    <Content Include="Views\Student\Details.cshtml" />
+    <Content Include="Views\Student\Edit.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
+    <Content Include="Views\Player\Create.cshtml" />
+    <Content Include="Views\Player\Delete.cshtml" />
+    <Content Include="Views\Player\Details.cshtml" />
+    <Content Include="Views\Player\Edit.cshtml" />
+    <Content Include="Views\Player\Index.cshtml" />
+    <Content Include="Views\Team\Create.cshtml" />
+    <Content Include="Views\Team\Delete.cshtml" />
+    <Content Include="Views\Team\Details.cshtml" />
+    <Content Include="Views\Team\Edit.cshtml" />
+    <Content Include="Views\Team\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

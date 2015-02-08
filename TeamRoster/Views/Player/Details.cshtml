@@ -1,0 +1,74 @@
+﻿@model TeamRoster.Models.Player
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Player</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Team.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Team.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PlayerNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlayerNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Position)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Position)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hits)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hits)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
